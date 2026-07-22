@@ -44,17 +44,20 @@ Interactive Swagger Docs: http://localhost:8000/docs
 5.**Sample Response (GET /tasks)**
 
 JSON
+
 [
   {
     "id": 1,
     "title": "Setup development environment",
     "done": true
   },
+  
   {
     "id": 2,
     "title": "Build Stage 2 read endpoints",
     "done": true
   },
+  
   {
     "id": 3,
     "title": "Conquer Week 2 CRUD assignment",
@@ -63,5 +66,5 @@ JSON
 ]
 
 
-**Memory Persistence Reflection**
+**Memory Persistence Reflection:**
 Because data is held in-memory in a standard Python list, stopping or restarting the uvicorn server wipes all dynamically added or modified tasks, resetting the data back to the default seed list. This demonstrates why persistent databases (like SQLite or PostgreSQL) are essential for backend applications in real-world production environments.
